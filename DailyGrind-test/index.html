@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Grind Success</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body id="bg" class="sky-5">
+    <div id="success-wrapper">
+        <h1 id="time"></h1>
+        <p id="date"></p>
+        <div id="animation-wrapper"></div>
+        <p>Your coffee is being prepared.<br />Tap to dismiss.</p>
+    </div>
+
+    <script type="text/javascript">
+        //select bg
+        document.onload = function () {
+            var bg = document.getElementById("bg");
+        }
+        //clock
+        function updateClock() {
+            //get user's time of day
+            var now = new Date();
+            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            var date = [now.getDate(), months[now.getMonth()],now.getFullYear()].join(' ');
+            currentHour = now.getHours(); //current hour in global scope
+            var displayHour = currentHour;
+            if (currentHour > 12){
+                displayHour = currentHour - 12;
+            }
+            var currentMinutes = now.getMinutes();
+            if (currentMinutes <= 9){
+                currentMinutes = "0" + currentMinutes;
+            }
+            var time = displayHour + ":" + currentMinutes;
+            //write the time
+            var timeContainer = document.getElementById("time");
+            timeContainer.innerHTML = time;
+            //write the date
+            var dateContainer = document.getElementById("date");
+            dateContainer.innerHTML = date;
+            // update once per second
+            setTimeout(updateClock, 1000);
+        }
+        //assign hour as class for bg
+        function updateSky() {
+            bg.className = "";
+            bg.className += "sky-" + currentHour;
+            // update once per minute
+            setTimeout(updateSky, 60000);
+        }
+        //initialize clock
+        updateClock();
+        //initialize sky
+        updateSky();
+    </script>
+</body>
+</html>
