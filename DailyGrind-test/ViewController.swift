@@ -150,7 +150,19 @@ class ViewController: UIViewController, HMHomeManagerDelegate, HMHomeDelegate, H
                 let brewView = UIWebView(frame: CGRect(x: 0,y: 0,width: self.view.frame.width, height: self.view.frame.height))
                 brewView.backgroundColor = .purpleColor()
                 //   wkWebBrew.loadRequest(NSURLRequest(URL: NSURL(string: "https://google.com")!))
-                brewView.loadRequest(NSURLRequest(URL: NSURL(fileReferenceLiteral: "index.html")))
+               // brewView.loadRequest(NSURLRequest(URL: NSURL(fileReferenceLiteral: "index.html")))
+                
+                let baseUrl = NSBundle.mainBundle().bundleURL
+                let path = NSBundle.mainBundle().pathForResource("index", ofType: "html")
+                let HTMLString: NSString?
+                
+                do {
+                    HTMLString = try NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
+                    brewView.loadHTMLString(HTMLString as! String, baseURL: baseUrl )
+                    
+                } catch {
+                    HTMLString = nil
+                }
                 
                 self.view.addSubview(brewView)
             })

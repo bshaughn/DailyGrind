@@ -53,8 +53,8 @@
 		90CC86181C51DD9A00BCB39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90CC86241C51DDF300BCB39D /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		90CC86261C51DDF300BCB39D /* DailyGrind-test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "DailyGrind-test.entitlements"; sourceTree = "<group>"; };
-		90CF85821C60A2BC003DE93D /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		90CF85841C60A2BC003DE93D /* coffee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = coffee.gif; sourceTree = "<group>"; };
+		90CF85821C60A2BC003DE93D /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = css/style.css; sourceTree = "<group>"; };
+		90CF85841C60A2BC003DE93D /* coffee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = coffee.gif; path = images/coffee.gif; sourceTree = "<group>"; };
 		90CF85871C60A32E003DE93D /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +112,8 @@
 				90CC85F61C51DD9A00BCB39D /* AppDelegate.swift */,
 				90CC85F81C51DD9A00BCB39D /* ViewController.swift */,
 				90CF85871C60A32E003DE93D /* index.html */,
+				90CF85821C60A2BC003DE93D /* style.css */,
+				90CF85841C60A2BC003DE93D /* coffee.gif */,
 				90CF85811C60A2BC003DE93D /* css */,
 				90CF85831C60A2BC003DE93D /* images */,
 				90CC85FA1C51DD9A00BCB39D /* Main.storyboard */,
@@ -143,7 +145,6 @@
 		90CF85811C60A2BC003DE93D /* css */ = {
 			isa = PBXGroup;
 			children = (
-				90CF85821C60A2BC003DE93D /* style.css */,
 			);
 			path = css;
 			sourceTree = "<group>";
@@ -151,7 +152,6 @@
 		90CF85831C60A2BC003DE93D /* images */ = {
 			isa = PBXGroup;
 			children = (
-				90CF85841C60A2BC003DE93D /* coffee.gif */,
 			);
 			path = images;
 			sourceTree = "<group>";

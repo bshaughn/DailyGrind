@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "210"
             endingLineNumber = "210"
-            landmarkName = "updateControllerWithHome(_:)"
+            landmarkName = "accessoryBrowser(_:didFindNewAccessory:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "217"
             endingLineNumber = "217"
-            landmarkName = "accessoryDidUpdateServices(_:)"
+            landmarkName = "accessoryBrowser(_:didRemoveNewAccessory:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -47,7 +47,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "221"
             endingLineNumber = "221"
-            landmarkName = "accessoryDidUpdateReachability(_:)"
+            landmarkName = "updateControllerWithHome(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -81,6 +81,38 @@
             endingLineNumber = "194"
             landmarkName = "accessoryBrowser(_:didFindNewAccessory:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DailyGrind_test.ViewController.accessoryBrowser (DailyGrind_test.ViewController)(__ObjC.HMAccessoryBrowser, didFindNewAccessory : __ObjC.HMAccessory) -&gt; ()"
+                  moduleName = "DailyGrind-test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bartshaughnessy/DailyGrind/DailyGrind-test/ViewController.swift"
+                  timestampString = "476176906.765487"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "195"
+                  endingLineNumber = "195"
+                  offsetFromSymbolStart = "475">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DailyGrind_test.ViewController.(accessoryBrowser (DailyGrind_test.ViewController) -&gt; (__ObjC.HMAccessoryBrowser, didFindNewAccessory : __ObjC.HMAccessory) -&gt; ()).(closure #1)"
+                  moduleName = "DailyGrind-test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bartshaughnessy/DailyGrind/DailyGrind-test/ViewController.swift"
+                  timestampString = "476176906.765755"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "196"
+                  endingLineNumber = "196"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -111,40 +143,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "181"
             endingLineNumber = "181"
-            landmarkName = "accessoryBrowser(_:didFindNewAccessory:)"
+            landmarkName = "accessory(_:service:didUpdateValueForCharacteristic:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DailyGrind_test.ViewController.accessoryBrowser (DailyGrind_test.ViewController)(__ObjC.HMAccessoryBrowser, didFindNewAccessory : __ObjC.HMAccessory) -&gt; ()"
-                  moduleName = "DailyGrind-test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bartshaughnessy/Desktop/Other%20Projects/DailyGrind-test/DailyGrind-test/ViewController.swift"
-                  timestampString = "476167824.273525"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "183"
-                  endingLineNumber = "183"
-                  offsetFromSymbolStart = "475">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DailyGrind_test.ViewController.(accessoryBrowser (DailyGrind_test.ViewController) -&gt; (__ObjC.HMAccessoryBrowser, didFindNewAccessory : __ObjC.HMAccessory) -&gt; ()).(closure #1)"
-                  moduleName = "DailyGrind-test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bartshaughnessy/Desktop/Other%20Projects/DailyGrind-test/DailyGrind-test/ViewController.swift"
-                  timestampString = "476167824.273917"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "184"
-                  endingLineNumber = "184"
-                  offsetFromSymbolStart = "30">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
